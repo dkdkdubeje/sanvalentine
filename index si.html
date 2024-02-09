@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💘QUIERES SER MI SAN VALENTIN 💘</title>
+  <style>
+    .body {
+      background-color: crimson;
+      text-align: center;
+    }
+
+    .body__title {
+      color: white;
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">💘QUIERES SER MI SAN VALENTIN? 💘</h1>
+  <img src="https://pbs.twimg.com/media/DVt_KeLVAAEhmuq.jpg" alt="Foto D My" class="body__img" />
+  <br>
+  <button id="yes">💓🌚Claro que yes🌚💓</button>
+  <button id="no"> 😭 Nel Pastel 😭 </button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const ZomosSanValentine = () => {
+      alert('💞Ahora eres mi san valentin para siempre mi chiquita bonita, y espero que aceptes serlo todos los años que me queden en este mundo, gracias por existir y hacerme la vida mil veces mejor 💞');
+      alert('Yo nunca habia celebrado San Valentin como tal, y quiero que tu seas la primera en todo, te amo con toda mi alma y quiero que te quedes por siempre💓');
+      location.href = 'https://www.youtube.com/watch?v=fvBhS3Q8sJQ';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', ZomosSanValentine);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
